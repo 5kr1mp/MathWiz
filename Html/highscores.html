@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>High Scores</title>
+  <link rel="stylesheet" href="/highscores.css">
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://kit.fontawesome.com/277c41dddb.js" crossorigin="anonymous"></script>
+  <style>
+    body{
+    background: rgba(0, 0, 0, .5);
+}
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="/SoundEfcts/HS.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<img class="dance" src="/Pictures/Final_Neko_Mc_Dancin.gif" alt="">
+    <div class="container">
+        <div id="highScores" class="flex-column flex-center">
+            <h1 id="finalScore">Leaderboards</h1>
+            <ul class="high-scores" id="high-scores-list"></ul>
+            <a href="/" class="btn">Go Home <i class="fa-solid fa-house"></i></a>
+        </div>
+        <!--<button id="reset-leaderboard">Reset Leaderboard</button>-->
+    </div>
+  <script>
+    const highScoresList = document.getElementById('high-scores-list');
+    const highScores = JSON.parse(localStorage.getItem('highScores') || '[]');
+
+    function renderHighScores() {
+      highScoresList.innerHTML = '';
+      highScores.forEach((score) => {
+        const listItem = document.createElement('li');
+        listItem.className = 'high-score';
+        listItem.innerHTML = `${score.name} - ${score.score}`;
+        highScoresList.appendChild(listItem);
+      });
+    }
+
+    renderHighScores();
+
+    const resetButton = document.getElementById('reset-leaderboard');
+    function resetLeaderboard() {
+      localStorage.removeItem('highScores');
+      highScoresList.innerHTML = '';
+      alert('Leaderboard has been reset!');
+    }
+
+    resetButton.addEventListener('click', resetLeaderboard);
+  </script>
+</body>
+</html>

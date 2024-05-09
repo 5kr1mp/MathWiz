@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <audio autoplay loop id="game-audio">
+        <source src="/SoundEfcts/game.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <div id="home" class="flex-column flex-center">
+         <img src="/Pictures/Final_Neko_Rungif-export.gif" alt="">
+         <h1>Kill The Remaining Enemies!</h1>
+         <a href="/Html/lvl3.html" class="btn" id="clickLink">Continue</a>>
+        </div>
+     </div>
+     <audio id="clickSound" src="/SoundEfcts/click.mp3"></audio>
+     <script>
+        const audio = document.getElementById('game-audio');
+        const storedPosition = localStorage.getItem('audioPlaybackPosition');
+        if (storedPosition) {
+            audio.currentTime = storedPosition;
+        }
+
+        var clickLink = document.getElementById("clickLink")
+        var clickSound = document.getElementById("clickSound")
+    
+        clickLink.addEventListener("click", function(event) {
+            event.preventDefault()
+            clickSound.play();
+            setTimeout(function() {
+                window.location.href = clickLink.href; 
+            }, 1000)
+        })
+    </script>
+</body>
+</html>
