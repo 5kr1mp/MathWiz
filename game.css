@@ -93,17 +93,17 @@ body{
     border: 2px solid white;
 }
 .lvl1{
-    background: url(Pictures/middleground-export.png);
+    background: url('Pictures/middleground-export.png');
     background-size: cover;
     background-position: bottom;
 }
 .lvl2{
-    background: url(Pictures/new-lava-background-preview-.png);
+    background: url('Pictures/new-lava-background-preview-.png');
     background-size: cover;
     background-position: center;
 }
 .lvl3{
-    background: url(Pictures/old-dark-castle-interior-withtilesbackground1.png);
+    background: url('Pictures/old-dark-castle-interior-withtilesbackground1.png');
     background-size: cover;
     background-position: center;
 }
@@ -113,7 +113,7 @@ body{
     width: 60px;
     height: 70px;
     background-size: cover;
-    background-image: url(/Pictures/Final_Neko_Idle-export.gif);
+    background-image: url('Pictures/Final_Neko_Idle-export.gif');
 }
 .enemy1{
     margin-top: 20px;
@@ -121,7 +121,7 @@ body{
     width: 64px;
     height: 116px;
     background-size: cover;
-    background-image: url(/Pictures/Dummy-100size.png);
+    background-image: url('Pictures/Dummy-100size.png');
 }
 .enemy2{
     margin-top: 20px;
@@ -129,7 +129,7 @@ body{
     width: 116px;
     height: 116px;
     background-size: cover;
-    background-image: url(/Pictures/Fire_worm_Idle-1.gif);
+    background-image: url('Pictures/Fire_worm_Idle-1.gif');
 }
 .enemy3{
     margin-top: 5px;
@@ -137,7 +137,7 @@ body{
     width: 130px;
     height: 120px;
     background-size: cover;
-    background-image: url(Pictures/demon-idle-export.gif);
+    background-image: url('Pictures/demon-idle-export.gif');
 }
 .enemyhp-bar {
     border: 1px solid black;
@@ -162,7 +162,7 @@ body{
 .p2{
     width: 60px;
     height: 50px;
-    background: url(Pictures/fire_ball.gif);
+    background: url('Pictures/fire_ball.gif');
     background-size: cover;
     position: absolute;
     display: none;
@@ -170,7 +170,7 @@ body{
 .p3{
     width: 60px;
     height: 50px;
-    background: url(Pictures/bolt_nobg.gif);
+    background: url('Pictures/bolt_nobg.gif');
     background-size: cover;
     position: absolute;
     display: none;
@@ -178,7 +178,7 @@ body{
 .char-projectile {
     width: 60px;
     height: 50px;
-    background: url(Pictures/water_attack_2.gif);
+    background: url('Pictures/water_attack_2.gif');
     background-size: cover;
     position: absolute;
     display: none;

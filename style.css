@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
 :root{
-    background: url(Pictures/mainbg.gif);
+    background: url('Pictures/mainbg.gif');
 }
 *{
     box-sizing: border-box;
