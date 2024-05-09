@@ -75,12 +75,12 @@ startGame = () => {
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
       if (characterHP <= 0) {
-        window.location.assign('/Html/end.html');
+        window.location.assign('end.html');
       } 
       else { 
         localStorage.setItem('mostRecentScore', score);
         localStorage.setItem('characterHP', characterHP); 
-        window.location.assign('/Html/end.html');
+        window.location.assign('end.html');
       }
     }
     questionCounter++
@@ -162,7 +162,7 @@ function charThrowProjectile() {
     enemyprojectile.style.display = 'none'
     hitAudio.play();
     if (characterHP <= 0) {
-      window.location.assign('/Html/end.html');
+      window.location.assign('end.html');
     } 
   }
 //identifier

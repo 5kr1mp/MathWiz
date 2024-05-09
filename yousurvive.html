@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <audio autoplay loop id="game-audio">
-        <source src="/SoundEfcts/game.mp3" type="audio/mpeg">
+        <source src="SoundEfcts/game.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
     <div class="container">
          <div id="home" class="flex-column flex-center">
-         <img src="/Pictures/Final_Neko_Rungif-export.gif" alt="">
+         <img src="Pictures/Final_Neko_Rungif-export.gif" alt="">
          <h1>Face Real Monsters Now!</h1>
-         <a href="/Html/lvl2.html" class="btn" id="clickLink">Continue</a>
+         <a href="lvl2.html" class="btn" id="clickLink">Continue</a>
         </div>
      </div>
-     <audio id="clickSound" src="/SoundEfcts/click.mp3"></audio>
+     <audio id="clickSound" src="SoundEfcts/click.mp3"></audio>
      <script>
         const audio = document.getElementById('game-audio');
         const storedPosition = localStorage.getItem('audioPlaybackPosition');

@@ -73,17 +73,17 @@ startGame = () => {
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
       if (characterHP <= 0) {
-        window.location.assign('/Html/end.html');
+        window.location.assign('end.html');
       } 
       else if (enemyHP > 0) {
         localStorage.setItem('mostRecentScore', score);
         localStorage.setItem('characterHP', characterHP);
-        window.location.assign('/Html/yousurvive.html');
+        window.location.assign('yousurvive.html');
       }
       else {
         localStorage.setItem('mostRecentScore', score);
         localStorage.setItem('characterHP', characterHP); 
-        window.location.assign('/Html/nextlevel.html');
+        window.location.assign('nextlevel.html');
       }
     }
     questionCounter++
