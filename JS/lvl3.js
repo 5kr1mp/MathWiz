@@ -177,7 +177,7 @@ choices.forEach(choice => {
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct': 'incorrect'
 
         if(classToApply === 'correct') {
-          incrementScore(SCORE_POINTS)
+          incrementScore(SCORE_POINTS * scoreMultiplier)
           scoreMultiplier++
           charThrowProjectile()
           correctAudio.play()
